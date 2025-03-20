@@ -41,7 +41,7 @@
             // mskCod
             // 
             mskCod.Location = new Point(22, 37);
-            mskCod.Mask = "00000";
+            mskCod.Mask = "0000";
             mskCod.Name = "mskCod";
             mskCod.Size = new Size(100, 23);
             mskCod.TabIndex = 0;
