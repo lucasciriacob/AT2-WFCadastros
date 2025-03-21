@@ -56,6 +56,17 @@ namespace AT2_WFCadastro
                 Erro("Informe o status");
                 return;
             }
+
+            if (Produtos.ListaProdutos.Any(x => x.Codigo == Convert.ToInt32(mskCod.Text)))
+            {
+                Erro("Código já cadastrado");
+                return;
+            }
+            if (Produtos.ListaProdutos.Any(x => x.Nome == txtNome.Text))
+            {
+                Erro("Nome já cadastrado");
+                return;
+            }
             Produtos p = new Produtos();
             p.Codigo = Convert.ToInt32(mskCod.Text);
             p.Nome = txtNome.Text;
